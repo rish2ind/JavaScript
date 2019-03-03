@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+           Change HTML content
+        </title>
+    </head>
+    <body><center>
+        <h1><u>Changing CSS with JavaScript</u></h1>
+        <h5 id="demo">Hello this is Rishabh Mathur</h5>
+        <button onclick="myFun()">Click me to increase size</button>
+        </center>
+        <script>
+            function myFun(){
+                document.getElementById("demo").style.fontSize = "40px";
+            }
+        </script><p><center>
+        <button onclick="myFunc()">Click me to reduce size</button>
+        </center></p>
+        <script>
+            function myFunc(){
+                document.getElementById("demo").style.fontSize = "15px";
+            }
+        </script>
+    </body>
+</html>
