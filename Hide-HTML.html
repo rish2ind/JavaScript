@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+           Change HTML content
+        </title>
+    </head>
+    <body><center>
+        <h1><u>Hide HTML content</u></h1>
+        <p id="demo">This line can be hide using JavaScript</p>
+        <button onclick="myFun()">Click me to hide the above line</button>
+        
+        <script>
+            function myFun(){
+                document.getElementById("demo").style.display = "none";
+            }
+        </script>
+        <p><button onclick="myFunc()">Click me to show above line</button>
+        </p>
+        <script>
+            function myFunc(){
+                document.getElementById("demo").style.display = "block";
+            }
+        </script>
+        </center>
+    </body>
+</html>
