@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+           Change HTML content
+        </title>
+    </head>
+    <body>
+      <h2>JavaScript Arrays</h2>
+       <p id="demo"></p>
+        <script>
+            var text, i, c, tech;
+            tech = ["Mahindra", " Tata", " Bajaj", " Hero", " TVS "];
+            c = tech.length;
+            text = "<ul>"
+            for(i=0; i<=c; i++){
+                text += "<li>"+ tech[i] + "</li>";
+            }
+            text +="</ul>";
+            document.getElementById('demo').innerHTML = text;
+        </script>
+    </body>
+</html>
