@@ -6,16 +6,23 @@
     </head>
     <body>
        <center>
+      
         <form style="margin-top: 15%">
+            <h1>Your birth Year</h1>
             <input style="width: 30%; padding: 10px;" type="number" placeholder="Type your age...." id="number" >
             <input style="padding: 10px;" type="button" id="button" onclick="myFun()" value="Find Year">
             <center id="year">Year</center>
         </form>
         </center>
         
+        <h1>Convert Celsius to Ferehnite</h1>
+        <form>
+            <input type="number" placeholder="Enter Farehnite" id="temp">
+            <button onclick="myTemp()">Click me</button>
+            <p id="deg">Temperature</p>
+        </form>
         
-        
-        <script type="text/javascript">
+        <script>
             function myFun(){
                 var x = document.getElementById("number").value;
                 var y = document.getElementById("button");
@@ -27,9 +34,21 @@
                 var num = x - (date);
                 document.getElementById("year").style.display = "block";
                 document.getElementById("year").innerHTML = "Your birth year is : " + num ;
-            }
-            
+            }  
             document.getElementById("year").style.display = "none";
+            
+            
+            function myTemp(){
+                var x = document.getElementById("temp").value;
+                if(x==""){
+                    window.alert("Please enter right Temperature !");
+                }
+               var temp = (5/9)*(x-32) ;
+                document.getElementById("deg").style.display = "block";
+                document.getElementById("deg").innerHTML = "Temperature in Celsius is : " + temp;
+            }
+            document.getElementById("deg").style.display = "none";
         </script>
+       
     </body>
 </html>
