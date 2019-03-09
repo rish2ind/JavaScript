@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+           Change HTML content
+        </title>
+    </head>
+    <body>
+      <h2>JavaScript Arrays Sort</h2>
+      <p><b>Note:</b> Array is sort using sort() and reverse sort using reverse(). </p>
+      
+       <button onclick="myFun1()">Sort as alphabetic way</button> <button onclick="myFun2()">Sort as Numerically</button> 
+        <p id="demo"></p>
+        <script>
+            var points = [40, 100, 1, 5, 25, 10]
+            document.getElementById('demo').innerHTML = points;
+            function myFun1(){
+                points.sort();
+                document.getElementById('demo').innerHTML = points;
+            }
+            function myFun2(){
+                points.sort(function(a, b){return(a-b)});
+                document.getElementById('demo').innerHTML = points;
+            }
+        </script>
+    </body>
+</html>
