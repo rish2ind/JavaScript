@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+           Change HTML content
+        </title>
+    </head>
+    <body>
+      <h2>JavaScript Arrays : If Else Condition</h2>
+          <p><b>Note:</b> Click the button to get the time based greeting.</p>
+          <button onclick="myFun()">Try it</button>
+          <p id="demo"></p>
+        <script>
+            function myFun(){
+            var greetings;
+            var time = new Date().getHours();
+            
+            if(time < 12){
+                greetings = "Good Morning";
+            }
+            else if(time < 18){
+                greetings = "Good Afternoon";
+            }
+            else{
+                greetings = "Good Evening";
+            }
+               
+            document.getElementById('demo').innerHTML = greetings;
+             }
+        </script>
+    </body>
+</html>
